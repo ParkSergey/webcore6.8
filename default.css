@@ -213,37 +213,37 @@ li:hover {
   }
  
   .main-title{
-    width: 1096px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex: 1
-    gap: 20px;
-    align-items:center;
-    padding-top: 17px;
+    width : 1096px;
+    display : flex;
+    justify-content : flex-start;
+    flex-wrap : nowrap;
+    flex : 1
+    gap : 20px;
+    align-items : center;
+    padding-top : 17px;
     
   }
   .main-title__icons{
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-left: 200px;
+    font-weight : bold;
+    display : flex;
+    justify-content : flex-end;
+    gap : 5px;
+    align-items : center;
+    margin-bottom : 10px;
+    margin-left : 200px;
   }
   .main-title__headline{
-    padding-top: 10px;
+    padding-top : 10px;
   }
   span.no-wrap{
-    font-weight: 600;
-    display: inline;
+    font-weight : 600;
+    display : inline;
   }
   .second-paragraph,.first-paragraph{
-    width: fit-content;
-    visibility: visible;
+    width : fit-content;
+    visibility : visible;
   }
   .main-picture{
-    margin-left: 120px;
+    margin-left : 120px;
   }
 }
