@@ -132,6 +132,7 @@ li:hover {
     height: 88px;
   }
   .menu {
+    font-family: 'TT Lakes';
     overflow: hidden;
     width: 776px;
   }
@@ -162,6 +163,7 @@ li:hover {
     visibility: hidden;
   }
   .first-paragraph {
+    font-family: 'TT Lakes';
     height: 100px;
     display: flex;
     align-items: center;
@@ -183,11 +185,12 @@ li:hover {
     display: none;
   }
   .second-paragraph {
+    font-family: 'TT Lakes';
     display: block;
     visibility: hidden;
     height: 90px;
     height: fit-content;
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 0px;
   }
   .continuation {
@@ -244,6 +247,6 @@ li:hover {
     visibility : visible;
   }
   .main-picture{
-    margin-left : 120px;
+    margin-left : 170px;
   }
 }
