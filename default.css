@@ -155,6 +155,9 @@ li:hover {
     justify-content: space-around;
     gap: 10px;
   }
+  .header-left-icons{
+    display: none;
+  }
   .header-divider {
     visibility: hidden;
   }
@@ -223,13 +226,24 @@ li:hover {
   .main-title__icons{
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 5px;
     align-items: center;
     margin-bottom: 10px;
-    margin-left: 90px;
+    margin-left: 200px;
   }
   .main-title__headline{
     padding-top: 10px;
+  }
+  span.no-wrap{
+    font-weight: 600;
+    display: inline;
+  }
+  .second-paragraph,.first-paragraph{
+    width: fit-content;
+    visibility: visible;
+  }
+  .main-picture{
+    margin-left: 120px;
   }
 }
