@@ -14,27 +14,30 @@ body {
   font-family: 'TT Lakes', 'Times New Roman', Times, sans-serif;
   margin: 0;
 }
-.menu-first-button{
-  display: none;
-}
+
 .header {
+  background-color: #fff;
   width: 100%;
   height: 88px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
- margin: 20px auto;
- padding: 0;
+  gap: 20px;
 }
 .header-left-icons{
+  flex-grow: 1;
   display: flex;
+  justify-content: flex-end;
   flex-wrap: nowrap;
   gap: 16px;
   margin-right: 10px;
 }
+.header-left-icons__logo{
+  display: flex;
+  justify-content: flex-start;
+}
 .header-grey-stick {
-  visibility: hidden;
+  display: none;
 }
 .header-rightside__stick {
   display: none;
@@ -53,6 +56,7 @@ body {
 }
 .header-left-icons{
   margin-right: 10px;
+  margin-left: auto;
 }
 .header-rightside__icons{
   display: none;
@@ -77,11 +81,11 @@ body {
   padding-bottom: 20px;
   line-height: 40px;
 }
-button{
+.menu button{
+  font-family: 'TT Lakes';
   height: 40px;
-  background-color: #fff;
   border: none;
-  margin-left: 16px;
+  background-color: #fff;
 }
 button:hover {
   border: 2px solid #b8ffec;
@@ -92,7 +96,8 @@ button:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   height: 40px;
-  width: 100vw;
+  width: 500px;
+  scrollbar-width: none;
   margin-top: 32px;
 }
 .description {
@@ -107,7 +112,7 @@ button:hover {
 .description-image {
   display: none;
 }
-.text {
+.tablet-text {
   display: block;
 }
 .second-paragraph {
@@ -130,7 +135,9 @@ button:hover {
   display: none;
   width: 100hw;
   margin-right: 10px;
-  margin-top: 0px;
+}
+.picture{
+  width: 100%;
 }
 @media (min-width: 768px) {
   .header {
@@ -139,13 +146,19 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width:fit-content;
     height: 88px;
   }
   .menu {
     font-family: 'TT Lakes';
     overflow: hidden;
     width: 100vw;
+    height: 40px;
+  }
+  .header-rightside__icons{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
   }
 
   .header__grey-stick {
@@ -155,10 +168,12 @@ button:hover {
     display: inline;
   }
   .header-rightside {
+    visibility: visible;
     width: 500px;
     height: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-grow: 2;
     margin-left: 250px;
     margin-right: 16px;
     gap: 20px;
@@ -222,7 +237,7 @@ button:hover {
     margin-right: 40px;
   }
   
-  .text {
+  .tablet-text {
     width: 312px;
     display: inline-block;
     visibility: visible;
@@ -239,10 +254,13 @@ button:hover {
   }
   .menu{
     width: 900px;
-    height: 100px;
+    height: 40px;
     display: flex;
     justify-content: flex-start;
+    gap: 10px;
+    white-space: wrap;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
  .menu-first-button{
   display: inline-block;
@@ -251,9 +269,8 @@ button:hover {
     width : 100vw;
     display : flex;
     justify-content : flex-start;
-    flex-wrap : nowrap;
+    flex-wrap : wrap;
     flex : 1
-    gap : 0px;
     align-items : center;
     padding-top : 17px;
     
@@ -276,15 +293,22 @@ button:hover {
     display : inline-block;
   }
   .first-paragraph{
+    display: flex;
+    justify-content: space-between;
     width : 1120px;
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-left: 34px;
     visibility : visible;
   }
   .second-paragraph{
+    display: block;
     width: 390px;
     visibility: visible;
+    margin-top: 20px;
+     margin-left: 34px;
   }
   .main-picture{
+    width: 530px;
     margin-left : 170px;
   }
   .main-title__icons{
@@ -292,4 +316,8 @@ button:hover {
     justify-content: flex-end;
 
   }
+  .menu:last-child{
+    flex-basis: 100%;
+  }
+ 
 }
