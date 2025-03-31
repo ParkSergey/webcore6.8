@@ -85,7 +85,7 @@ body {
   font-family: 'TT Lakes';
   height: 40px;
   border: none;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 8px 22px;
 }
 button:hover {
@@ -93,11 +93,11 @@ button:hover {
 }
 .menu {
   display: flex;
-  white-space: wrap;
+  white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
   height: 40px;
-  width: 500px;
+  width: 700px;
   scrollbar-width: none;
   margin-top: 24px;
   column-gap: 31px;
@@ -156,6 +156,7 @@ button:hover {
     overflow: hidden;
     width: 100vw;
     height: 40px;
+    white-space: nowrap;
   }
   .header-rightside__icons{
     display: flex;
@@ -176,8 +177,8 @@ button:hover {
     height: 40px;
     display: flex;
     justify-content: flex-end;
-    flex-grow: 2;
-    margin-left: 250px;
+    flex-grow: 1;
+    margin-left: auto;
     margin-right: 10px;
     gap: 10px;
   }
@@ -274,8 +275,8 @@ button:hover {
     justify-content : flex-start;
     flex-wrap : wrap;
     flex : 1
-    align-items: center;
-    padding-top: 17px;
+    align-items : center;
+    padding-top : 17px;
     
   }
   .main-title__icons{
@@ -317,6 +318,7 @@ button:hover {
   .main-title__icons{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 40px;
 
   }
   .menu{
@@ -329,3 +331,4 @@ button:hover {
   }
  
 }
+
