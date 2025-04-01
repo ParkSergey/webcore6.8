@@ -99,7 +99,7 @@ button:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   height: 40px;
-  width: 700px;
+  width: 100%;
   scrollbar-width: none;
   margin-top: 24px;
   column-gap: 31px;
@@ -327,7 +327,7 @@ button:hover {
 
   }
   .menu{
-    width: 1000px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 31px;
